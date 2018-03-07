@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="112dp"
+        android:layout_height="109dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:src="@drawable/logo" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="BLOOD DONOR"
+        android:textColor="@color/redcolor"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_horizontal"
+        android:text="Admin Account"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnAddCapmpaign"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dip"
+        android:background="@color/redcolor"
+        android:text="Add Campaign"
+        android:textColor="@color/white" />
+    <Button
+        android:id="@+id/btnDonorData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dip"
+        android:background="@color/redcolor"
+        android:text="All Data"
+        android:textColor="@color/white" />
+</LinearLayout>

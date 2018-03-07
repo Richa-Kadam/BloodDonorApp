@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Campaign List"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/redcolor"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        android:text="Click on list to delete camp"
+        android:textColor="@color/redcolor" />
+    <ListView
+        android:id="@+id/cam_rec_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/white"
+        android:dividerHeight="1dp" />
+</LinearLayout>

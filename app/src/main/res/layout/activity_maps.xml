@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+    <EditText
+        android:id="@+id/TF_location"
+        android:layout_width="285dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom"
+        android:ems="10"
+        android:hint="Enter a place to Search"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+    <Button
+        android:id="@+id/B_search"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/TF_location"
+        android:background="@color/redcolor"
+        android:onClick="onClick"
+        android:text="Search"
+        android:textColor="@color/white" />
+    <LinearLayout
+        android:id="@+id/ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/B_search">
+        <Button
+            android:id="@+id/B_hopistals"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="10"
+            android:background="@color/redcolor"
+            android:onClick="onClick"
+            android:text="Hospitals "
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/B_to"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="10"
+            android:background="@color/redcolor"
+            android:onClick="onClick"
+            android:text="Get Donors Location"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ly"
+        tools:context="com.example.android.blooddonorapp.MapsActivity" />
+</RelativeLayout>
+

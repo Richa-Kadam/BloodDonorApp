@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/bgcolor"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Campaign List"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:textAllCaps="true"
+        android:textColor="@color/redcolor"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_campaign"
+        android:divider="@color/white"
+        android:dividerHeight="1dp" />
+</LinearLayout>
